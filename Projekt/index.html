@@ -6,13 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Kacper Zając">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Moja strona </title>
+    <title>Home</title>
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <section class="home">
+
+        <video class="video-background" autoplay muted loop>
+            <source src="assets/homepage.mp4" type="video/mp4">
+        </video>
+
+        <header>
+            <nav>
+
+                <i class='bx bx-planet logo'></i>
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="#"> GALERIA </a></li>
+                    <li><a href="contact.html"> KONTAKT </a></li>
+                </ul>
+            
+            </nav>
+        </header>
+
+        <div class="content">
+            <h1> COSMOS </h1>
+            <a href="#"> KLIKNIJ I ZOBACZ </a>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="sec">
+
+        </div>
+    </section>
 
     <footer>
         <div class="footer-row">
@@ -29,12 +61,12 @@
             </div>
 <!--        Kolumna 2       -->
             <div class="footer-col">
-
-                <h3> Kontakt </h3>
-                <p> ul. Czarnowiejska 73</p>
+                        
+                <h3> Adres </h3>
+                <p> Kacper Zając</p>
                 <p> 30-054 Kraków </p>
                 <p> Polska </p>
-                <p class="email-id">email@mail.pl</p>
+                <p class="email-id">kacperzajac@student.agh.edu.pl</p>
                 <div class="phone-number">
                     <i class='bx bxs-phone phone-icon'></i>
                     <h4> +48 - 123 456 789 </h4>
@@ -46,28 +78,30 @@
 
                 <h3> Więcej </h3>
                 <ul style="list-style: none;">
-                    <li> <a href="#"> Wesprzyj </a></li>
-                    <li> <a href="#"> FAQ </a></li>
-                    <li> <a href="#"> Pomoc </a></li>
-                    <li> <a href="#"> Polityka prywatności </a></li>
+                    <li> <a href="#"> Wesprzyj </a> </li>
+                    <li> <a href="#"> FAQ </a> </li>
+                    <li> <a href="#"> Pomoc </a> </li>
+                    <li> <a href="#"> Polityka prywatności </a> </li>
                 </ul>
                 
             </div>
 <!--        Kolumna 4 - Formularz       -->
             <div class="footer-col contact">
-
+                
                 <h3> Newsletter </h3>
-                <div class="input-box">
-                    <input type="text" placeholder="Imię i nazwisko" required>
-                    <i class='bx bxs-user'></i>
-                </div>
+                <form>
+                    <div class="input-box">
+                        <input type="text" placeholder="Imię i nazwisko" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
 
-                <div class="input-box">
-                    <input type="email" placeholder="E-mail" required>
-                    <i class='bx bxs-envelope' ></i>
-                </div>
+                    <div class="input-box">
+                        <input type="email" placeholder="E-mail" required>
+                        <i class='bx bxs-envelope' ></i>
+                    </div>
 
-                <button type="submit" class="btn"> Zapisz mnie! </button>
+                    <button type="submit" class="btn"> Zapisz mnie! </button>
+                </form>
 
             </div>
 
