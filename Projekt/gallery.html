@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kacper Zając">
+
+    <link rel="stylesheet" href="assets/css/style-gallery.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title> Gallery </title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <i class='bx bx-planet logo'></i>
+            <ul>
+                <li><a href="index.html"> HOME </a></li>
+                <li><a href="gallery.html"> GALERIA </a></li>
+                <li><a href="contact.html"> KONTAKT </a></li>
+            </ul>
+        
+        </nav>
+    </header>
+
+    <section class="wrapper">
+
+        <video class="video-background" autoplay muted loop>
+            <source src="assets/videos/homepage.mp4" type="video/mp4">
+        </video>
+
+        <div class="gallery">
+            <h2> Galeria </h2>
+
+            <div class="search-box">
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Szukaj zdjęć">
+            </div>
+
+            <div class="images">
+                <div class="image-box" data-name="ziemia">
+                    <img src="assets/images/zdjecie1.jpg" alt="">
+                    <h6> Ziemia z Księżyca </h6>
+                    <button type="submit"> <i class='bx bxs-download'></i> Pobierz </button>
+                    <i class='bx bx-share share' ></i>
+                </div>
+
+                <div class="image-box" data-name="ksiezyc">
+                    <img src="assets/images/zdjecie1.jpg" alt="">
+                    <h6> Ziemia z Księżyca </h6>
+                    <button type="submit"> <i class='bx bxs-download'></i> Pobierz </button>
+                    <i class='bx bx-share share' ></i>
+                </div>
+
+                <div class="image-box" data-name="slonce">
+                    <img src="assets/images/zdjecie1.jpg" alt="">
+                    <h6> Ziemia z Księżyca </h6>
+                    <button type="submit"> <i class='bx bxs-download'></i> Pobierz </button>
+                    <i class='bx bx-share share' ></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-row">
+<!--        Kolumna 1       -->
+            <div class="footer-col">
+                <h3> O nas </h3>
+                <p> Strona internetowa poświęcona zdjęciom kosmosu. Strona internetowa poświęcona zdjęciom kosmosu. </p>
+                <div class="footer-social-links">
+                    <a href="#"> <i class='bx bxl-facebook'></i> </a>
+                    <a href="#"> <i class='bx bxl-twitter'></i> </a>
+                    <a href="#"> <i class='bx bxl-instagram-alt' ></i> </a>
+                    <a href="#"> <i class='bx bxl-youtube' ></i> </a>
+                </div>
+            </div>
+<!--        Kolumna 2       -->
+            <div class="footer-col">
+                        
+                <h3> Adres </h3>
+                <p> Kacper Zając</p>
+                <p> 30-054 Kraków </p>
+                <p> Polska </p>
+                <p class="footer-email-id">kacperzajac@student.agh.edu.pl</p>
+                <div class="footer-phone-number">
+                    <i class='bx bxs-phone phone-icon'></i>
+                    <h4> +48 - 123 456 789 </h4>
+                </div>
+
+            </div>
+<!--        Kolumna 3       -->
+            <div class="footer-col">
+
+                <h3> Więcej </h3>
+                <ul style="list-style: none;">
+                    <li> <a href="#"> Wesprzyj </a> </li>
+                    <li> <a href="#"> FAQ </a> </li>
+                    <li> <a href="#"> Pomoc </a> </li>
+                    <li> <a href="#"> Polityka prywatności </a> </li>
+                </ul>
+                
+            </div>
+<!--        Kolumna 4 - Formularz       -->
+            <div class="footer-col ">
+                
+                <h3> Newsletter </h3>
+                <div class="footer-input-box">
+                    <input type="text" placeholder="Imię i nazwisko" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+
+                <div class="footer-input-box">
+                    <input type="email" placeholder="E-mail" required>
+                    <i class='bx bxs-envelope' ></i>
+                </div>
+
+                <button type="submit" class="footer-btn"> Zapisz mnie! </button>
+
+            </div>
+
+        </div>
+        <hr class="footer-hr"/>
+        <p class="footer-copyright"> 2024 All Rights Reserved </p>
+    </footer>
+    
+    <script src='assets/js/search.js'></script>
+</body>
+</html>

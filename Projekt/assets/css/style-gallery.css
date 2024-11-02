@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    overflow:hidden;
+}
+
+.video-background {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.gallery {
+    width: 1200px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: 80px 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 40px;
+    color: whitesmoke;
+    margin-bottom: 25px;
+}
+
+.gallery .search-box {
+    position: relative;
+    height: 42px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.search-box input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    color: whitesmoke;
+    padding: 0 15px 0 45px;
+    border-radius: 10px;
+}
+
+.search-box i {
+    position: absolute;
+    font-size: 20px;
+    z-index: 2;
+    color: #999;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+.gallery .image-box {
+    position: relative;
+    max-height: 300px;
+    max-width: 300px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.images .image-box {
+    margin: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    animation: fadeIn 0.8s linear;
+}
+
+.images .image-box img {
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.6s linear;
+}
+
+.image-box:hover img {
+    transform: scale(1.1);
+}
+
+.image-box h6 {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: 500;
+    display: none; 
+}
+
+.image-box:hover h6 {
+    display: block;
+}
+
+.image-box button {
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: whitesmoke;
+    background-color:seagreen;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer; 
+    display: none;
+    border-radius: 20px;
+}
+
+.image-box:hover button {
+    display: block;
+}
+.image-box button:hover {
+    background-color: rgb(42, 124, 78);
+}
+
+.image-box .share {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 500;
+    display: none; 
+}
+
+.image-box:hover .share {
+    display: block;
+}
+
+
+@keyframes fadeIn {
+    0%{
+        transform: scale(.6) translateY(-10px);
+        opacity: 0;
+    }
+}
