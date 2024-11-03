@@ -306,6 +306,22 @@ section.show-animation .animation {
 
 }
 
+@media screen and (max-width: 1160px){
+    .sec3 h1 {
+        font-size: 40px;
+    }
+    .sec3 p {
+        font-size: 16px;
+    }
+    .sec3 a {
+        font-size: 12px;
+    }
+}
 
+@media screen and (max-width: 580px){
+    .sec3 h1 {
+        font-size: 24px;
+    }
+}
 
 

@@ -109,3 +109,9 @@ form button:hover {
     color: whitesmoke;
     border: 1px solid whitesmoke;
 }
+
+select option {
+    color: rgba(255, 255, 255, .8);
+    background-color: rgb(18, 11, 63);
+    border: 2px solid whitesmoke;
+}
