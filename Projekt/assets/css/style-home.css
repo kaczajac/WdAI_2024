@@ -68,6 +68,14 @@ section {
     background-color: #131316;
 }
 
+section .animation {
+    transition: 1s;
+}
+
+section.show-animation .animation {
+    filter: blur(0);
+}
+
 /*          Sekcja 1 - O nas            */
 
 .sec1-wrapper {
@@ -117,6 +125,16 @@ section {
 .sec1-image img {
     width: 100%;
     border-radius: 10px;
+}
+
+.sec1 .animation {
+    transform: translateX(-80%);
+    filter: blur(5px);
+}
+
+.sec1.show-animation .animation {
+    transform: translateX(0);
+    filter: blur(0);
 }
 
 /*          Sekcja 2 - Timeline             */
@@ -199,7 +217,7 @@ section {
     transform: skewY(-5deg);
 }
 
-.sec-2 {
+.sec3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,20 +225,20 @@ section {
     flex-direction: column;
 }
 
-.sec-2 h1 {
+.sec3 h1 {
     font-size: 80px;
     color: whitesmoke;
     margin-bottom: 10px;
 }
 
-.sec-2 p {
+.sec3 p {
     font-size: 35px;
     color:aquamarine;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.sec-2 a {
+.sec3 a {
     display: inline-block;
     text-decoration: none;
     color: whitesmoke;
@@ -232,9 +250,17 @@ section {
     transition: all 0.5s ease;
 }
 
-.sec-2 a:hover {
+.sec3 a:hover {
     background-color: whitesmoke;
     color:#333;
+}
+
+.sec3 .animation {
+    transform: scale(0.6);
+}
+
+.sec3.show-animation .animation {
+    transform: scale(1);
 }
 
 @media screen and (max-width: 768px){

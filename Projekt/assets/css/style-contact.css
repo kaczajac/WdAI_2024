@@ -60,6 +60,10 @@ form .input-box {
     margin: 12px 0;
 }
 
+.field.error .item {
+    border: 2px solid maroon;
+}
+
 .field .item::placeholder{
     color: rgba(255, 255, 255, .8);
 }
@@ -70,6 +74,10 @@ form .input-box {
     text-align: left;
     margin: -5px 0 10px;
     display: none;
+}
+
+.field.error .error-msg {
+    display: block;
 }
 
 form .textarea-field .item {

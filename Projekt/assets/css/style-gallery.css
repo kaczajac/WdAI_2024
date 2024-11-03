@@ -14,7 +14,7 @@
     align-items: center;
     min-height: 100vh;
     background: rgba(0, 0, 0, 0.2);
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .video-background {
@@ -28,6 +28,8 @@
 }
 
 .gallery {
+    margin-top: 100px;
+    margin-bottom: 100px;
     width: 1200px;
     background: transparent;
     backdrop-filter: blur(10px);
@@ -76,8 +78,8 @@
 
 .gallery .image-box {
     position: relative;
-    max-height: 300px;
-    max-width: 300px;
+    height: 320px;
+    width: 320px;
     border-radius: 6px;
     overflow: hidden;
 }
@@ -86,7 +88,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    width: fit-content;
 }
 
 .images .image-box {

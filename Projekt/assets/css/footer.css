@@ -168,3 +168,12 @@ footer {
     border: 1px solid whitesmoke;
     color: whitesmoke;
 }
+
+@media screen and (max-width: 950px){
+    .footer-row {
+        flex-direction: column;
+    }
+    .footer-col {
+        margin-bottom: 40px;
+    }
+}
