@@ -8,7 +8,121 @@
 
 <body>
 
+    <div class="wrapper">
+        <h2> Generator haseł </h2>
+        <form>
+            <div class="item box">
+                <input id="minLength" type="text" placeholder="Minimalna długość hasła">
+            </div>
+
+            <div class="item box">
+                <input id="maxLength" type="text" placeholder="Maksymalna długość hasła">
+            </div>
+
+            <div class="item check">
+                <label>
+                    <input id="bigLetters" type="checkbox" checked>
+                    Czy hasło ma zawierać wielkie litery?
+                </label>
+            </div>
+
+            <div class="item check">
+                <label>
+                    <input id="symbols" type="checkbox" checked>
+                    Czy hasło ma zawierać znaki specjalne?
+                </label>
+            </div>
+
+            <div class="item btn">
+                <button id="generator" type="submit"> Wygeneruj hasło </button>
+            </div>
+
+        </form>
+    </div>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            background-color:rgb(40, 5, 59);
+            color: whitesmoke;
+            box-sizing: border-box;
+            font-family: 'Poppins';
+        }
+
+        .wrapper {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            top: 15vh;
+            width: 40%;
+            min-height: 100px;
+            border: 2px solid rgb(193, 193, 193);
+            padding: 15px 10px;
+        }
+
+        .wrapper h2 {
+            font-size: 2em;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .wrapper form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        form .item {
+            margin: 10px 0;
+            outline: none;
+            border: none;
+        }
+
+        .box {
+            width: 200px;
+            height: 60px;
+        }
+
+        .box input {
+            width: 100%;
+            height: 100%;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+
+        form .btn {
+            width: 150px;
+            height: 60px;
+        }
+
+        form button {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1em;
+            background: transparent;
+            border: 2px solid whitesmoke;
+            color: whitesmoke;
+            transition: all 0.5s ease;
+        }
+
+        form button:hover {
+            background: whitesmoke;
+            color:rgb(27, 27, 27);
+            cursor: pointer;
+        }
+
+    </style>
     
+    <script src="js/cw2.js"></script>
     
 </body>
 </html>
