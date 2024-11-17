@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kacper Zając">
+
+    <title> Gierka </title> 
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="healthbar">
+            <img src="assets/full_heart.png">
+            <img src="assets/full_heart.png">
+            <img src="assets/full_heart.png">
+        </div>
+        <h2 id="scorebar"></h2>
+    </div>
+
+    <div id="restartScreen">
+        <div id="message">
+            <h2> Game Over! </h2>
+            <h3 id="finalScore"></h3>
+            <h3 id="highestScore"></h3>
+            <button id="restartGame"> Try again? </button>
+        </div>
+    </div>
+
+    <div id="map"> </div>
+
+    <div id="aim"> <img src="assets/aim.png"> </div>
+
+    <audio loop id="music"> 
+      <source src="assets/sad-music.mp3"> 
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
