@@ -21,6 +21,6 @@ Each directory corresponds to a certain **module**:
 ## External resources
 
   - [https://www.pexels.com/](https://www.pexels.com/) : images and videos used in *Lab_02*
-  - images and music used in *Lab_03* was provided by the teacher
+  - images and music used in *Lab_03* were provided by the teacher
 
 
